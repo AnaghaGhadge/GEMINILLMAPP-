@@ -25,7 +25,7 @@ else:
     genai.configure(api_key=api_key)
 
 ## Function to load OpenAI model and get respones
-model = genai.GenerativeModel('gemini-1.5-pro')
+model = genai.GenerativeModel('gemini-1.5-flash')
 chat = model.start_chat(history=[])
 def get_gemini_response(question):
     
