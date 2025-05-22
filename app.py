@@ -32,7 +32,7 @@ else:
 ## Function to load OpenAI model and get respones
 
 def get_gemini_response(question):
-    model = genai.GenerativeModel('gemini-1.5-pro')
+    model = genai.GenerativeModel('gemini-1.5-flash')
     response = model.generate_content(question)
     return response.text
 
